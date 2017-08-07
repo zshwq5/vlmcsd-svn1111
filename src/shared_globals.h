@@ -48,7 +48,7 @@
 #include "types.h"
 #include "kms.h"
 
-#define MIN_CSVLK 4
+#define MIN_CSVLK 5
 typedef struct
 {
 	const char* Epid;
@@ -133,6 +133,7 @@ extern int_fast8_t UseClientRpcBTFN;
 #endif // USE_MSRPC
 
 #ifndef NO_SOCKETS
+extern int_fast8_t ExitLevel;
 extern char *defaultport;
 #endif // NO_SOCKETS
 
